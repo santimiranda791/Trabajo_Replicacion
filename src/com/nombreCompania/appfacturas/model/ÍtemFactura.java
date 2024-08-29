@@ -1,8 +1,14 @@
 package com.nombreCompania.appfacturas.model;
 
-public class ÍtemFactura{
+public class ÍtemFactura {
 private Producto producto;
 private int cantidad;
+
+    public ÍtemFactura(Producto Producto, int cantidad) {
+        this.producto = Producto;
+        this.cantidad = cantidad;
+    }
+
 
     public Producto getProducto() {
         return producto;
@@ -20,7 +26,7 @@ private int cantidad;
         this.cantidad = cantidad;
     }
     public float calcularImporte() {
-        return (float) (cantidad-producto.getPrecio());
+        return (float) (cantidad*producto.getPrecio());
     }
 
 

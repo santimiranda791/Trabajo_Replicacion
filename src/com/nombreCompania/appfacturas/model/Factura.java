@@ -61,7 +61,7 @@ public class Factura {
         builder.append("Fecha Emisión: ")
                 .append(dateFormat.format(this.fecha))
                 .append("\n")
-                .append("\n#\tNombre\t$\tCant.\tTotal\n");
+                .append("\n#\tNombre\t$\tCant.\n");
 
         for (int i = 0; i < indiceItems; i++) {
             ÍtemFactura item = items[i];
